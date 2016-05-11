@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IMDbApp</string>
+    <string name="searchButton">Search IMDb.com</string>
+    <string name="titletxt" />
+    <string name="release">Release Date:</string>
+    <string name="releasetxt" />
+    <string name="genre">Genre:</string>
+    <string name="genretxt" />
+    <string name="director">Director:</string>
+    <string name="directortxt" />
+    <string name="actors">Actors:</string>
+    <string name="actorstxt" />
+    <string name="plot">Plot:</string>
+    <string name="plottxt" />
+    <string name="finishbtn">Finish</string>
+</resources>

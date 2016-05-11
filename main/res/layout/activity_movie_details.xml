@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.com.imdbapp.MovieDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titletxt"
+        android:id="@+id/titletxt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/release"
+        android:id="@+id/release"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/titletxt"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/releasetxt"
+        android:id="@+id/releasetxt"
+        android:layout_alignTop="@+id/release"
+        android:layout_toEndOf="@+id/release"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genre"
+        android:id="@+id/genre"
+        android:layout_below="@+id/release"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/genretxt"
+        android:id="@+id/genretxt"
+        android:layout_below="@+id/release"
+        android:layout_toEndOf="@+id/genre"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/director"
+        android:id="@+id/director"
+        android:layout_below="@+id/genre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/directortxt"
+        android:id="@+id/directortxt"
+        android:layout_alignTop="@+id/director"
+        android:layout_toEndOf="@+id/genretxt"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="true"
+        android:maxWidth="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actors"
+        android:id="@+id/actors"
+        android:layout_below="@+id/directortxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actorstxt"
+        android:id="@+id/actorstxt"
+        android:layout_alignTop="@+id/actors"
+        android:layout_below="@+id/directortxt"
+        android:layout_toEndOf="@+id/director"
+        android:textStyle="bold"
+        android:maxWidth="150dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagePoster"
+        android:minHeight="200dp"
+        android:minWidth="120dp"
+        android:layout_below="@+id/titletxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movieratingBar"
+        android:numStars="5"
+        android:stepSize="1"
+        android:minWidth="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/imagePoster"
+        android:layout_toEndOf="@+id/plot" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plot"
+        android:id="@+id/plot"
+        android:layout_below="@+id/movieratingBar"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plottxt"
+        android:id="@+id/plottxt"
+        android:layout_below="@+id/plot"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finishbtn"
+        android:id="@+id/finishbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imagePoster" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgprevbtn"
+        android:layout_alignBottom="@+id/finishbtn"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/arrow_left"
+        android:layout_alignTop="@+id/finishbtn"
+        android:background="#fdf8f8" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgbtnnxt"
+        android:src="@drawable/arrow_right"
+        android:layout_alignTop="@+id/finishbtn"
+        android:layout_alignEnd="@+id/imagePoster"
+        android:background="#fdf8f8" />
+
+</RelativeLayout>
